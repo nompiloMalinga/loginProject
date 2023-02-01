@@ -32,7 +32,7 @@ namespace LoginRegister
 
         private void Login_Click(object sender, EventArgs e)
         {
-            if((TextBox1.Text.Equals("admin")) && (TextBox2.Text.Equals("admin")))
+            if((TextBox1.Text.Equals("admin", StringComparison.OrdinalIgnoreCase)) && (TextBox2.Text.Equals("admin", StringComparison.OrdinalIgnoreCase)))
             {
                 MessageBox.Show("Login Successful!");
                 new Form2().Show();
